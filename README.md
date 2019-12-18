@@ -18,4 +18,15 @@ DenHa框架 其主要特性包括：
  + 提供便利助手函数
  + 提供MYSQL类库查询
 
-> DenHa框架的运行环境要求PHP7.0以上。
+## denha框架的环境要求如下
+>[info]PHP >= 7.1.0
+## PHP扩展需要
+>[info]PDO PHP Extension
+>MBstring PHP Extension
+*****
+## Composer安装
+进入项目根目录然后执行
+```
+composer create-project denha/denha denha
+```
+*****
