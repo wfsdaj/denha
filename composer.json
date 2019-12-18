@@ -1,0 +1,29 @@
+{
+    "name": "denha",
+    "description": "The denha Framework.",
+    "keywords": ["framework", "denha"],
+    "license": "MIT",
+    "homepage": "https://denha.cn",
+    "support": {
+        "issues": "https://github.com/denhaphp/framework/issues",
+        "source": "https://github.com/denhaphp/framework"
+    },
+    "authors": [
+        {
+            "name": "siyue",
+            "email": "350375092@qq.com"
+        }
+    ],
+    "require": {
+    	"php": "^7.1",
+        "denha/framework": "^1.2",
+        "phpunit/phpunit":"^6.2"
+    },
+    "autoload": {
+        "files": [],
+        "psr-4": {
+            "app\\": "app",
+            "dao\\": "app/tools/dao"
+        }
+    }
+}
