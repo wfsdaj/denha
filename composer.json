@@ -18,7 +18,6 @@
     	"php": "^7.1",
         "denha/framework": "^1.2",
         "phpunit/phpunit":"^6.2",
-        "filp/whoops": "^2.5"
     },
     "autoload": {
         "files": [],
