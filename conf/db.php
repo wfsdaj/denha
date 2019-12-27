@@ -15,6 +15,7 @@ return [
             'dsn'         => '',
             'params'      => '',
             'charset'     => 'utf8mb4',
+	    'read_write_power' => 0, // 读写权限 0读写 1只写 2只读
             'error_log'   => true, // 是否开启错误Sql保存
             'slow_log'    => true, // 是否开启慢sql日志记录
             'slow_time'   => 5, // 查询时间超过多少秒记录日志

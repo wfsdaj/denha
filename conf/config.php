@@ -11,7 +11,9 @@ return [
 
     'check_disk'       => true, // 是否开启磁盘容量检测
 
-    'auth_key'         => 'test123456', //助手函数auth密钥 用于可逆加密[注意手动修改这个值]
+    'db_file'          => 'db.php', // 数据库配置文件名称
+    
+    'auth_key'         => 'test123456', // 助手函数auth密钥 用于可逆加密[注意手动修改这个值]
 
     // +----------------------------------------------------------------------
     // | 项目结构层数配置
@@ -75,27 +77,6 @@ return [
         'save_log'  => true, // 错误屏蔽后是否保存错误信息
         'save_days' => 0, // 最大保存天数 0则不限制
         'level'     => ['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'], // 日志记录类型
-    ],
-
-    // +----------------------------------------------------------------------
-    // | 日志信息配置
-    // | level：空则不记录 指定记录类型 ['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency']
-    // +----------------------------------------------------------------------
-    //
-    'log'              => [
-        'channels' => [
-            'Denha' => [
-                'type'     => 'File',
-                'realtime' => false, // 实时写入
-                'level'    => ['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'],
-                'drive'    => [
-                    'name'      => 'days', // single单文件模式 days每日递增模式
-                    'path'      => DATA_RUN_PATH, // File保存文件目录
-                    'file_max'  => 0, //  [days模式专用]最大文件保存数量 0不限制
-                    'file_name' => '', // [single模式专用]指定文件名称 未设置则使用渠道名称做文件名
-                ],
-            ],
-        ],
     ],
 
     // +----------------------------------------------------------------------
