@@ -15,9 +15,9 @@
         }
     ],
     "require": {
-    	"php": "^7.1",
+    	"php": "^7.2",
         "denha/framework": "^1.2",
-        "phpunit/phpunit":"^6.2",
+        "phpunit/phpunit":"^6.2"
     },
     "autoload": {
         "files": [],
