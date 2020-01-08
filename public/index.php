@@ -1,5 +1,8 @@
 <?php
+require __DIR__ . '/../vendor/autoload.php';
 
-require '../vendor/denha/framework/Denha.php';
+use denha\App;
 
-denha\Start::up();
+$app = new App();
+
+$app->start();
