@@ -16,7 +16,7 @@ return [
     // |   ├─file_name:single模式专用 指定文件名称 未设置则使用渠道名称做文件名
     // +----------------------------------------------------------------------
     //
-    'Denha'   => [
+    'Denha' => [
         'type'      => 'File',
         'realtime'  => false, // 实时写入
         'level'     => ['debug', 'info', 'notice', 'warning', 'error', 'critical', 'alert', 'emergency'],
@@ -27,9 +27,9 @@ return [
         ],
         'drive'     => [
             'name'      => 'daily',
-            'path'      => DATA_RUN_PATH, 
-            'file_max'  => 0, 
+            'path'      => DATA_RUN_PATH . php_sapi_name() . DS,
+            'file_max'  => 0,
             'file_name' => '',
         ],
-    ]
+    ],
 ];
